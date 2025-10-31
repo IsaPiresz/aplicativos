@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comunicação Aumentativa e Alternativa (CAA)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Comunicação Aumentativa e Alternativa (CAA)</h1>
+    <p>Ajude a expressar emoções e necessidades com símbolos e voz sintetizada</p>
+  </header>
+
+  <main>
+
+    <section id="symbol-grid-section">
+      <h2>Escolha símbolos para montar sua frase</h2>
+      <div id="symbol-grid" aria-label="Símbolos para comunicação"></div>
+      <div id="constructed-message" aria-live="polite" aria-atomic="true"></div>
+      <div class="button-group">
+        <button id="play-speech" aria-label="Ouvir a frase montada">🔊 Ouvir</button>
+        <button id="clear-message" aria-label="Limpar frase">✖ Limpar</button>
+      </div>
+    </section>
+
+    <section id="suggestion-section">
+      <h2>Frases sugeridas (com base no contexto)</h2>
+      <ul id="suggestion-list" aria-label="Frases sugeridas"></ul>
+    </section>
+
+    <section id="customize-section">
+      <h2>Personalize seu vocabulário</h2>
+      <form id="add-symbol-form" aria-label="Adicionar novo símbolo">
+        <input type="text" id="new-symbol-text" placeholder="Texto descritivo" required aria-required="true" />
+        <input type="url" id="new-symbol-url" placeholder="URL da imagem (ex: https://...)" required aria-required="true" />
+        <button type="submit">Adicionar Símbolo</button>
+      </form>
+      <small>Dica: Use imagens claras e simples para facilitar a identificação.</small>
+    </section>
+
+  </main>
+
+  <footer>
+    <small>Projeto CAA - Ajuda para autistas não verbais | Desenvolvido em 2025</small>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
